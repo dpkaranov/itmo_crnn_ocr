@@ -58,3 +58,7 @@ def train():
         print("Validation loss:", np.mean(epoch_losses_val))
     save_path = os.path.join(weights_dir, 'crnn_model.pth')
     torch.save(model.state_dict(), save_path)
+
+
+if __name__ == '__main__':
+    train()
